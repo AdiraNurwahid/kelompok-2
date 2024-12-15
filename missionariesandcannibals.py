@@ -1,5 +1,5 @@
 def print_state(lM, lC, rM, rC, direction):
-    # Fungsi untuk mencetak kondisi saat ini
+    #Fungsi untuk mencetak kondisi saat ini
     print("\n")
     for _ in range(lM):
         print("M ", end="")
@@ -13,7 +13,7 @@ def print_state(lM, lC, rM, rC, direction):
     print("\n")
 
 def validate_input(uM, uC, lM, lC, rM, rC, direction):
-    # Validasi input untuk memastikan pergerakan valid.
+    #Validasi input untuk memastikan pergerakan valid.
     if uM < 0 or uC < 0:
         return False
     if uM + uC == 0 or uM + uC > 2:
@@ -25,7 +25,7 @@ def validate_input(uM, uC, lM, lC, rM, rC, direction):
     return True
 
 def is_game_over(lM, lC, rM, rC):
-    # Periksa apakah permainan berakhir karena misionaris dimakan.
+    #Periksa apakah permainan berakhir karena misionaris dimakan.
     if (lC > lM > 0) or (rC > rM > 0):
         print("Kanibal memakan misionaris:\nAnda kalah")
         return True
